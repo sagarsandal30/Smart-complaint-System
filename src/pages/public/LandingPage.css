@@ -1,0 +1,13 @@
+/* src/pages/public/LandingPage.css */
+.landing-page {
+  background-color: var(--color-bg-main);
+}
+.hero-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+@media (max-width: 768px) {
+  .features-section .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+}

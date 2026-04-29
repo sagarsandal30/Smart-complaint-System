@@ -1,0 +1,43 @@
+/* src/components/common/Sidebar.css */
+.sidebar {
+  width: 260px;
+  background-color: var(--color-bg-card);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-4) 0;
+  box-shadow: var(--shadow-sm);
+  z-index: 40;
+}
+.sidebar-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: var(--spacing-2) var(--spacing-6);
+  margin-top: var(--spacing-2);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  padding: 12px var(--spacing-6);
+  color: var(--color-text-muted);
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin: 4px var(--spacing-3);
+  border-radius: var(--radius-md);
+}
+.sidebar-link:hover {
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+}
+.sidebar-link.active {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.sidebar-link.active svg {
+  color: var(--color-primary);
+}
